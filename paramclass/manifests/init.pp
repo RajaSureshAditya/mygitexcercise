@@ -45,10 +45,12 @@
 class paramclass {
 #include paramclass::display
 
-class { 'paramclass::instpack':
-	pack_name => 'apache2',
-	file_loct => 'paramclass/temmp.html',
-	dest_loct => '/var/www/html/testingfileresource.html',
+#class { 'paramclass::instpack':
+#	pack_name => 'apache2',
+#	file_loct => 'paramclass/temmp.html',
+#	dest_loct => '/var/www/html/testingfileresource.html',
 	
-       }
+#       }
+
+include paramclass::usginhrexp
 }
